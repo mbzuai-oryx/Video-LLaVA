@@ -124,10 +124,10 @@
               <!-- First Group of 3 Authors -->
               <div class="author-group">
                   <span class="author-block">
-                      <a href="https://shehanmunasinghe.github.io/" style="color:#f68946;font-weight:normal;">Shehan Munasinghe</a>,
+                      <a href="https://shehanmunasinghe.github.io/" style="color:#f68946;font-weight:normal;">Shehan Munasinghe<sup>*</sup></a>,
                   </span>
                   <span class="author-block">
-                      <a href="https://thusharakart.github.io/" style="color:#008AD7;font-weight:normal;">Rusiru Thushara</a>,
+                      <a href="https://thusharakart.github.io/" style="color:#008AD7;font-weight:normal;">Rusiru Thushara<sup>*</sup></a>,
                   </span>
               </div>
 
@@ -155,12 +155,15 @@
               </div>
           </div>
             <div class="is-size-5 publication-authors">
-              Mohamed bin Zayed University of AI, Australian National University<br>
+              Mohamed bin Zayed University of AI, Australian National University,<br>
             </div>
             <div class="is-size-5 publication-authors">
             Linköping University, University of Central Florida<br>
             </div>
 
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal Contributiion</span>
+            </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -182,15 +185,6 @@
                     <span>Code</span>
                   </a>
                 </span>
-                <!-- <span class="link-block">
-                  <a href="#grand-dataset" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-database"></i>
-                    </span>
-                    <span>Dataset</span>
-                  </a>
-                </span> -->
               </div>
             </div>
           </div>
@@ -199,22 +193,38 @@
     </div>
   </section>
 
+<!-- Teaser-->
+<section class="section custom-section-teaser">
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-half" style="display: flex; align-items: flex-start; justify-content: center;">
+          <figure style="text-align: center;">
+            <figcaption>
+              <b>Video-LLaVA</b> is the <span style="color: red;">first video-based Large Multimodal Model (LMM) with pixel-level grounding capabilities.</span> 🔥🔥🔥
+          </figcaption>  
+            <img id="teaser" width="100%" src="images/figures/teaser.png">
+              
+          </figure>
+      </div>
+  </div>
+</section>
+<!--Teaser-->
+
   <!-- Abstract -->
-  <section class="hero teaser">
+  <!-- <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h4 class="subtitle has-text-justified">
-            Extending image-based Large Multimodal Models (LMM) to videos is challenging due to the inherent complexity of video data. The recent approaches extending image-based LMM to videos either lack the grounding capabilities (e.g., VideoChat, Video-ChatGPT, Video-LLaMA, etc.) or do not utilize the audio-signals for better video understanding (e.g., Video-ChatGPT). Addressing these gaps, we propose Video-LLaVA, the first LMM with pixel-level grounding capability, integrating audio cues by transcribing them into text to enrich video-context understanding. Our framework uses an off-the-shelf tracker and a novel grounding module, enabling it to spatially and temporally ground objects in videos following user instructions. We evaluate Video-LLaVA using video-based generative and question-answering benchmarks and introduce new benchmarks specifically designed to measure prompt-based object grounding performance. Further, we propose the use of Vicuna over GPT-3.5, as utilized in Video-ChatGPT, for video-based conversation benchmarking, ensuring reproducibility of results, a concern with the proprietary nature of GPT-3.5. Our codes, pretrained models, and interactive demo will be made publicly available.
+            Extending image-based Large Multimodal Models (LMM) to videos is challenging due to the inherent complexity of video data. 
+            The recent approaches extending image-based LMM to videos either lack the grounding capabilities (e.g., VideoChat, Video-ChatGPT, Video-LLaMA, etc.) or do not utilize the audio-signals for better video understanding (e.g., Video-ChatGPT). 
+            Addressing these gaps, we propose Video-LLaVA, the first LMM with pixel-level grounding capability, integrating audio cues by transcribing them into text to enrich video-context understanding. 
+            Our framework uses an off-the-shelf tracker and a novel grounding module, enabling it to spatially and temporally ground objects in videos following user instructions. 
+            We evaluate Video-LLaVA using video-based generative and question-answering benchmarks and introduce new benchmarks specifically designed to measure prompt-based object grounding performance. 
+            Further, we propose the use of Vicuna over GPT-3.5, as utilized in Video-ChatGPT, for video-based conversation benchmarking, ensuring reproducibility of results, a concern with the proprietary nature of GPT-3.5. 
+            Our codes, pretrained models, and interactive demo will be made publicly available.
         </h4>
       </div>
     </div>
-  </section>
-
-
-<!-- <div style="text-align:center;">
-  <iframe width="1024" height="720" src="https://www.youtube.com/embed/0dZ4dlNIGTY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
-
+  </section> -->
 
 
   <section class="section"  style="background-color:#efeff081">
@@ -227,11 +237,11 @@
             The key contributions of this work are: 
 
           <ol type="1">
-            <li>We propose Video-LLaVA, <b>the first video-based LMM with pixel-level grounding capabilities</b>, featuring a modular design for enhanced flexibility. </li>
-              <br>
+            <li>We propose Video-LLaVA, <b>the first video-based LMM with pixel-level grounding capabilities</b>, featuring a modular design for enhanced flexibility. Our framework uses an off-the-shelf tracker and a novel grounding module, enabling it to spatially ground objects in videos following user instructions. </li><br>
+              
+            <li>We introduce a <b>new benchmark specifically designed to measure prompt-based object grounding performance</b>. </li><br>
             <li>By incorporating audio context, Video-LLaVA significantly <b>enhances its understanding of video content</b>, making it more comprehensive and aptly suited for scenarios where the audio signal is crucial for video understanding 
-                (e.g., dialogues and conversations, news videos, etc.). </li>
-              <br>
+                (e.g., dialogues and conversations, news videos, etc.). </li><br>
             <li>We introduce <b>improved quantitative benchmarks</b> for video-based conversational models. Our benchmarks utilize open-source Vicuna LLM to ensure better reproducibility and transparency. We also propose benchmarks to evaluate the grounding capabilities of video-based conversational models.</li>
           </ol>
         </div>
@@ -246,7 +256,7 @@
 <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="60" style="vertical-align: bottom;"> Video-LLaVA</h2>
+      <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="40" style="vertical-align: bottom;"> Video-LLaVA : Architecture</h2>
     </div>
   </div>
 
@@ -286,20 +296,11 @@ with high accuracy.
 <section class="section">
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"> Qualitative Results : Video Grounding </h2>
+        <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="40" style="vertical-align: bottom;"> Qualitative Results : Video Grounding </h2>
       </div>
     </div>
   
     <div class="container is-max-desktop">
-      <!-- <div class="columns is-centered">
-        <div class="column is-full-width">
-          <div class="content has-text-justified">
-            <p>
-              caption
-            </p>
-          </div>
-        </div>
-      </div> -->
   
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
@@ -319,20 +320,11 @@ with high accuracy.
 <section class="section">
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"> Qualitative Results : Including Audio Modality </h2>
+        <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="40" style="vertical-align: bottom;"> Qualitative Results : Including Audio Modality </h2>
       </div>
     </div>
   
     <div class="container is-max-desktop">
-      <!-- <div class="columns is-centered">
-        <div class="column is-full-width">
-          <div class="content has-text-justified">
-            <p>
-              caption
-            </p>
-          </div>
-        </div>
-      </div> -->
   
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
@@ -352,7 +344,7 @@ with high accuracy.
 <section class="section">
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"> Video-ChatGPT vs Video-LLaVA</h2>
+        <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="40" style="vertical-align: bottom;"> Video-ChatGPT vs Video-LLaVA</h2>
       </div>
     </div>
   

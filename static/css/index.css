@@ -157,3 +157,18 @@ body {
   #interpolation-image-wrapper img {
     border-radius: 5px;
   }
+
+/* Custom CSS for responsive design */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for mobile screens */
+  .custom-section-teaser {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* Adjust styles for desktop screens */
+  .custom-section-teaser {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
