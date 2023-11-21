@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Video-LLaVA: Pixel Grounding in Large Multimodal Video Models">
+  <meta name="description" content="PG-Video-LLaVA: Pixel Grounding in Large Multimodal Video Models">
   <meta name="keywords" content="multimodal chatbot">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Video-LLaVA: Pixel Grounding in Large Multimodal Video Models</title>
+  <title>PG-Video-LLaVA: Pixel Grounding in Large Multimodal Video Models</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
@@ -119,7 +119,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <img src="images/logos/logo.png" alt="Video-LLaVA_face" width="100">
-            <h1 class="title is-1 publication-title">Video-LLaVA: Pixel Grounding in Large Multimodal Video Models</h1>
+            <h1 class="title is-1 publication-title">PG-Video-LLaVA: Pixel Grounding in Large Multimodal Video Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- First Group of 3 Authors -->
               <div class="author-group">
@@ -199,7 +199,7 @@
       <div class="column is-half" style="display: flex; align-items: flex-start; justify-content: center;">
           <figure style="text-align: center;">
             <figcaption>
-              <b>Video-LLaVA</b> is the <span style="color: red;">first video-based Large Multimodal Model (LMM) with pixel-level grounding capabilities.</span> 🔥🔥🔥
+              <b>PG-Video-LLaVA</b> is the <span style="color: red;">first video-based Large Multimodal Model (LMM) with pixel-level grounding capabilities.</span> 🔥🔥🔥
           </figcaption>  
             <img id="teaser" width="100%" src="images/figures/teaser.png">
               
@@ -216,9 +216,9 @@
         <h4 class="subtitle has-text-justified">
             Extending image-based Large Multimodal Models (LMM) to videos is challenging due to the inherent complexity of video data. 
             The recent approaches extending image-based LMM to videos either lack the grounding capabilities (e.g., VideoChat, Video-ChatGPT, Video-LLaMA, etc.) or do not utilize the audio-signals for better video understanding (e.g., Video-ChatGPT). 
-            Addressing these gaps, we propose Video-LLaVA, the first LMM with pixel-level grounding capability, integrating audio cues by transcribing them into text to enrich video-context understanding. 
+            Addressing these gaps, we propose PG-Video-LLaVA, the first LMM with pixel-level grounding capability, integrating audio cues by transcribing them into text to enrich video-context understanding. 
             Our framework uses an off-the-shelf tracker and a novel grounding module, enabling it to spatially and temporally ground objects in videos following user instructions. 
-            We evaluate Video-LLaVA using video-based generative and question-answering benchmarks and introduce new benchmarks specifically designed to measure prompt-based object grounding performance. 
+            We evaluate PG-Video-LLaVA using video-based generative and question-answering benchmarks and introduce new benchmarks specifically designed to measure prompt-based object grounding performance. 
             Further, we propose the use of Vicuna over GPT-3.5, as utilized in Video-ChatGPT, for video-based conversation benchmarking, ensuring reproducibility of results, a concern with the proprietary nature of GPT-3.5. 
             Our codes, pretrained models, and interactive demo will be made publicly available.
         </h4>
@@ -237,10 +237,10 @@
             The key contributions of this work are: 
 
           <ol type="1">
-            <li>We propose Video-LLaVA, <b>the first video-based LMM with pixel-level grounding capabilities</b>, featuring a modular design for enhanced flexibility. Our framework uses an off-the-shelf tracker and a novel grounding module, enabling it to spatially ground objects in videos following user instructions. </li><br>
+            <li>We propose PG-Video-LLaVA, <b>the first video-based LMM with pixel-level grounding capabilities</b>, featuring a modular design for enhanced flexibility. Our framework uses an off-the-shelf tracker and a novel grounding module, enabling it to spatially ground objects in videos following user instructions. </li><br>
               
             <li>We introduce a <b>new benchmark specifically designed to measure prompt-based object grounding performance</b>. </li><br>
-            <li>By incorporating audio context, Video-LLaVA significantly <b>enhances its understanding of video content</b>, making it more comprehensive and aptly suited for scenarios where the audio signal is crucial for video understanding 
+            <li>By incorporating audio context, PG-Video-LLaVA significantly <b>enhances its understanding of video content</b>, making it more comprehensive and aptly suited for scenarios where the audio signal is crucial for video understanding 
                 (e.g., dialogues and conversations, news videos, etc.). </li><br>
             <li>We introduce <b>improved quantitative benchmarks</b> for video-based conversational models. Our benchmarks utilize open-source Vicuna LLM to ensure better reproducibility and transparency. We also propose benchmarks to evaluate the grounding capabilities of video-based conversational models.</li>
           </ol>
@@ -256,7 +256,7 @@
 <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="40" style="vertical-align: bottom;"> Video-LLaVA : Architecture</h2>
+      <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="40" style="vertical-align: bottom;"> PG-Video-LLaVA : Architecture</h2>
     </div>
   </div>
 
@@ -276,7 +276,7 @@
         <figure style="text-align: center;">
           <img id="teaser" width="100%" src="images/figures/1-architecture.png">
           <figcaption>
-            Overview of the Video-LLaVA architecture, showcasing the integration of a CLIP-based visual
+            Overview of the PG-Video-LLaVA architecture, showcasing the integration of a CLIP-based visual
 encoder with a multimodal language model for video understanding. The CLIP visual encoder extracts spatio-temporal features from videos
 by averaging frame-level features across temporal and spatial dimensions. These features are then projected into the LLM’s input space
 using a learnable Multi-Layer Perceptron (MLP). The system features a grounding module for spatially locating textual descriptions within
@@ -307,7 +307,7 @@ with high accuracy.
           <figure style="text-align: center;">
             <img id="teaser" width="100%" src="images/figures/grounding-qual.png">
             <figcaption>
-                Visual representation of the grounding capability of advanced video-conversational capabilities of Video-LLaVA. The highlighted regions in each video frame indicate the model's ability to identify and spatially locate key subjects mentioned in the textual description, such as the giraffe, the statue, and the gymnast on a balance beam.
+                Visual representation of the grounding capability of advanced video-conversational capabilities of PG-Video-LLaVA. The highlighted regions in each video frame indicate the model's ability to identify and spatially locate key subjects mentioned in the textual description, such as the giraffe, the statue, and the gymnast on a balance beam.
             </figcaption>
           </figure>
         </div>
@@ -344,7 +344,7 @@ with high accuracy.
 <section class="section">
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="40" style="vertical-align: bottom;"> Video-ChatGPT vs Video-LLaVA</h2>
+        <h2 class="title is-3"><img src="images/logos/logo.png" alt="GLaMM_face" width="40" style="vertical-align: bottom;"> Video-ChatGPT vs PG-Video-LLaVA</h2>
       </div>
     </div>
   
