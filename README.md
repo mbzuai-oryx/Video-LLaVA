@@ -8,6 +8,7 @@
 **Mohamed bin Zayed University of Artificial Intelligence, UAE**
 
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://mbzuai-oryx.github.io/Video-LLaVA/)
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2311.13435)
 
 ---
 
@@ -121,6 +122,21 @@ Zero-shot question-answering (QA) capabilities were evaluated quantitatively usi
 + [Vicuna](https://github.com/lm-sys/FastChat): has the amazing language capabilities!
 + [LLaVA](https://github.com/haotian-liu/LLaVA): our architecture is inspired from LLaVA.
 + [Video-ChatGPT](https://github.com/mbzuai-oryx/Video-ChatGPT): the predecessor to PG-Video-LLaVA
+
+---
+
+## Citation 📜
+
+If you're using PG-Video-LLaVA in your research or applications, please cite using this BibTeX:
+
+```bibtex
+  @article{munasinghe2023PGVideoLLaVA,
+        title={PG-Video-LLaVA: Pixel Grounding Large Video-Language Models}, 
+        author={Shehan Munasinghe and Rusiru Thushara and Muhammad Maaz and Hanoona Abdul Rasheed and Salman Khan and Mubarak Shah and Fahad Khan},
+        journal={ArXiv 2311.13435},
+        year={2023}
+  }
+```
 
 ---
 
