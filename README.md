@@ -13,7 +13,7 @@
 ---
 
 ## 📢 Latest Updates
-- 📦 Code, models coming soon! 🚀
+- 📦 27-Dec-2023: Code, models released! 🚀
 ---
 
 ## <img src="docs/images/logos/logo.png" height="25">  Overview
@@ -45,6 +45,18 @@ The key contributions of this work are:
 <p align="center">
   <img src="docs/images/figures/1-architecture.png" alt="PG-Video-LLaVA Architectural Overview">
 </p>
+
+---
+
+## Installation and CLI Demo
+
+For installation and setting up the CLI demo, please refer to the instructions [here](/docs/1-CLI_DEMO.md).
+
+---
+
+## Training
+
+For training, please refer to the instructions [here](/docs/2-Training.md).
 
 ---
 
@@ -89,6 +101,9 @@ We evaluate PG-Video-LLaVA using video-based generative and question-answering b
 
 To quantitatively assess PG-Video-LLaVA’s spatial grounding capability, we conducted quantitative evaluations of PG-Video-LLaVA’s spatial grounding capabilities using two benchmarks that are derived from the test set of the VidSTG and HC-STVG datasets.
 
+For detailed instructions on performing quantitative evaluation on video grounding, please refer [this](/grounding_evaluation/README.md).
+
+
 <p align="center">
   <img src="docs/images/figures/quant_grounding.png" width="60%" alt="Video-Grounding Quantitative Results">
 </p>
@@ -113,6 +128,7 @@ Zero-shot question-answering (QA) capabilities were evaluated quantitatively usi
   <img src="docs/images/figures/quant_zero_shot.png" alt="Zero-shot QA Quantitative Results">
 </p>
 
+For detailed instructions on video-based generative performance benchmarking and zero-shot question answering benchmark, please refer [this](/quantitative_evaluation/README.md).
 
 ---
 
