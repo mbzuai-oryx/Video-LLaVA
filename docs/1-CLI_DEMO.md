@@ -24,7 +24,7 @@ Additionally, install FlashAttention which will be required for training,
 
 ## Download PG-Video-LLaVA Weights
 
-* Download LLaVA-v1.5 weights from HuggigFace
+* Download LLaVA-v1.5 weights from HuggingFace
   * [LLaVA-v1.5-7B](https://huggingface.co/liuhaotian/llava-v1.5-7b)
   * [LLaVA-v1.5-13B](https://huggingface.co/liuhaotian/llava-v1.5-13b)
 
