@@ -231,7 +231,7 @@ def mask_and_crop(image: np.ndarray, xyxy: np.ndarray, mask: np.ndarray) -> np.n
 
 
 from deva.inference.demo_utils import get_input_frame_for_deva
-from deva.ext.with_text_processor_with_clip import process_frame_with_text as process_frame_text
+from deva.ext.with_text_processor import process_frame_with_text as process_frame_text
 from deva.inference.frame_utils import FrameInfo
 from deva.inference.object_info import ObjectInfo
 from typing import Dict, List
