@@ -1,7 +1,7 @@
 # <img src="docs/images/logos/logo.png" height="40">  PG-Video-LLaVA: Pixel Grounding in Large Multimodal Video Models
 ![](https://i.imgur.com/waxVImv.png)
 
-[Shehan Munasinghe](https://shehanmunasinghe.github.io/)* , [Rusiru Thushara](https://thusharakart.github.io/)* , [Muhammad Maaz](https://www.muhammadmaaz.com/) , [Hanoona Rasheed](https://www.hanoonarasheed.com/), [Salman Khan](https://salman-h-khan.github.io/), [Mubarak Shah](https://www.crcv.ucf.edu/person/mubarak-shah/),  [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en). 
+[Shehan Munasinghe](https://shehanmunasinghe.github.io/)* , [Rusiru Thushara](https://thusharakart.github.io/)* , [Muhammad Maaz](https://www.mmaaz60.com) , [Hanoona Rasheed](https://www.hanoonarasheed.com/), [Salman Khan](https://salman-h-khan.github.io/), [Mubarak Shah](https://www.crcv.ucf.edu/person/mubarak-shah/),  [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en). 
 
 *Equal Contribution
 
